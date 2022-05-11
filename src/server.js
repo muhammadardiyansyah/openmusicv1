@@ -133,6 +133,7 @@ const init = async () => {
         service: playlistSongService,
         songsService,
         playlistsService,
+        activitiesPlaylistSong,
         validator: PlaylistSongValidator,
       },
     },
