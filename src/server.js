@@ -4,6 +4,7 @@ const Hapi = require('@hapi/hapi');
 const Jwt = require('@hapi/jwt');
 const Inert = require('@hapi/inert');
 const path = require('path');
+const TokenManager = require('./tokenize/TokenManager');
 
 // Albums
 const albums = require('./api/albums');
@@ -23,7 +24,6 @@ const UsersValidator = require('./validator/users');
 // authentications
 const authentications = require('./api/authentications');
 const AuthenticationsService = require('./services/postgres/AuthenticationsService');
-const TokenManager = require('./tokenize/TokenManager');
 const AuthenticationsValidator = require('./validator/authentications');
 
 // playlists
